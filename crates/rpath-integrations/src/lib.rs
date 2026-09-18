@@ -1,4 +1,4 @@
-use rpath_core::{RpathError, RpathResult, ShellKind, state_dir};
+use rpath_core::{state_dir, RpathError, RpathResult, ShellKind};
 use serde::{Deserialize, Serialize};
 use std::{
     fs,

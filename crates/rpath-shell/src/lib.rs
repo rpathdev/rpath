@@ -505,8 +505,8 @@ mod tests {
         wrapper_snippet,
     };
     use rpath_core::{
-        EnvironmentPlan, PathEntry, PathSource, PlanStats, ShellKind, build_environment_plan,
-        model::BuildOptions,
+        build_environment_plan, model::BuildOptions, EnvironmentPlan, PathEntry, PathSource,
+        PlanStats, ShellKind,
     };
     use std::collections::BTreeMap;
 

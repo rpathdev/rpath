@@ -3,14 +3,13 @@ mod upgrade;
 use anyhow::{Context, Result};
 use clap::{Args, Parser, Subcommand, ValueEnum};
 use rpath_core::{
-    BuildOptions, DiagnosticSeverity, EnvironmentPlan, EnvironmentSnapshot, ShellKind,
     build_environment_plan, delete_snapshot, diff_path_entries, diff_plan_against_current,
     list_snapshots, list_versions, load_snapshot, save_snapshot, save_version, snapshot_from_plan,
-    state_dir,
+    state_dir, BuildOptions, DiagnosticSeverity, EnvironmentPlan, EnvironmentSnapshot, ShellKind,
 };
 use rpath_integrations::{
-    IntegrationAction, IntegrationTarget, install_watch_service, run_integration,
-    uninstall_watch_service, watch_service_status,
+    install_watch_service, run_integration, uninstall_watch_service, watch_service_status,
+    IntegrationAction, IntegrationTarget,
 };
 use rpath_shell::{emit_environment, emit_snapshot, init_snippet, install_shell, uninstall_shell};
 use serde::Serialize;

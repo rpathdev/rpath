@@ -1,5 +1,6 @@
 /target/
 /.rpath/
+/.rune/
 *.pdb
 *.profraw
 *.profdata

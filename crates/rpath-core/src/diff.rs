@@ -63,7 +63,11 @@ fn current_path_entries() -> Vec<String> {
 }
 
 fn path_var_name() -> &'static str {
-    if cfg!(windows) { "Path" } else { "PATH" }
+    if cfg!(windows) {
+        "Path"
+    } else {
+        "PATH"
+    }
 }
 
 fn key(value: &str) -> String {

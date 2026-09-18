@@ -1,4 +1,4 @@
-use anyhow::{Context, Result, bail};
+use anyhow::{bail, Context, Result};
 use semver::Version;
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
@@ -358,8 +358,8 @@ fn temp_path_next_to(target: &Path) -> Result<std::path::PathBuf> {
 #[cfg(test)]
 mod tests {
     use super::{
-        ArchiveKind, GitHubRelease, is_newer_version, parse_sha256, platform_asset_for,
-        release_asset_url,
+        is_newer_version, parse_sha256, platform_asset_for, release_asset_url, ArchiveKind,
+        GitHubRelease,
     };
 
     #[test]
